@@ -18,7 +18,7 @@ async function onCall({ message, args }) {
 
         // Format the response using the specified header and footer
         if (data && data.response) {
-            const formattedResponse = `🗃 | 𝙱𝚕𝚊𝚌𝚔 𝙱𝚘𝚡 |\n━━━━━━━━━━━━━━━━\n${data.response}\n━━━━━━━━━━━━━━━━`;
+            const formattedResponse = `🗃 |★🅡🅔🅧🅑🅞🅣 𝙱𝚕𝚊𝚌𝚔 𝙱𝚘𝚡 |\n━━━━━━━━━━━━━━━━\n${data.response}\n━━━━━━━━━━━━━━━━`;
             await message.send(formattedResponse);
         } else {
             await message.send("No response from the API.");
