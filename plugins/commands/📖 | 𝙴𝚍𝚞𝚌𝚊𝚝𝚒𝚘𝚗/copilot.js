@@ -18,7 +18,7 @@ const previousResponses = new Map(); // Map to store previous responses for each
 async function onCall({ message, args }) {
     const id = message.senderID; // User ID
     if (!args.length) {
-        await message.reply("🌊✨ | 𝙲𝚘𝚙𝚒𝚕𝚘𝚝\n━━━━━━━━━━━━━━━━\nHello! How can I assist you today?\n━━━━━━━━━━━━━━━━");
+        await message.reply("🌊✨ |★🅡🅔🅧🅑🅞🅣 𝙲𝚘𝚙𝚒𝚕𝚘𝚝\n━━━━━━━━━━━━━━━━\nHello! How can I assist you today?\n━━━━━━━━━━━━━━━━");
         return;
     }
 
@@ -48,7 +48,7 @@ async function onCall({ message, args }) {
         console.log(`Sending message: ${copilotResponse}`);
 
         // Send the extracted message to the user
-        await message.send(`🌊✨ | 𝙲𝚘𝚙𝚒𝚕𝚘𝚝\n━━━━━━━━━━━━━━━━\n${copilotResponse}\n━━━━━━━━━━━━━━━━`);
+        await message.send(`🌊✨ |★🅡🅔🅧🅑🅞🅣 𝙲𝚘𝚙𝚒𝚕𝚘𝚝\n━━━━━━━━━━━━━━━━\n${copilotResponse}\n━━━━━━━━━━━━━━━━`);
 
         // Store the response for follow-up
         previousResponses.set(id, copilotResponse);
