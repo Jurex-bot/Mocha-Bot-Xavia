@@ -15,7 +15,7 @@ const config = {
 
 async function onCall({ message, args }) {
     if (!args.length) {
-        message.reply("🗨️✨ | 𝙲𝚑𝚊𝚝𝙶𝙿𝚃\n━━━━━━━━━━━━━━━━\nHello! How can I assist you today?\n━━━━━━━━━━━━━━━━");
+        message.reply("🗨️✨ |★🅡🅔🅧🅑🅞🅣𝙲𝚑𝚊𝚝𝙶𝙿𝚃\n━━━━━━━━━━━━━━━━\nHello! How can I assist you today?\n━━━━━━━━━━━━━━━━");
         return;
     }
 
@@ -36,9 +36,9 @@ async function onCall({ message, args }) {
         // Extract the reply from the response
         if (response.data && response.data.gpt4) {
             const gptResponse = response.data.gpt4;
-            await message.send(`🗨️✨ | 𝙲𝚑𝚊𝚝𝙶𝙿𝚃\n━━━━━━━━━━━━━━━━\n${gptResponse}\n━━━━━━━━━━━━━━━━`);
+            await message.send(`🗨️✨ |★🅡🅔🅧🅑🅞🅣𝙲𝚑𝚊𝚝𝙶𝙿𝚃\n━━━━━━━━━━━━━━━━\n${gptResponse}\n━━━━━━━━━━━━━━━━`);
         } else {
-            await message.send("🗨️✨ | 𝙲𝚊𝚝𝙶𝙿𝚃\n━━━━━━━━━━━━━━━━\nError: Unexpected response format from API.\n━━━━━━━━━━━━━━━━");
+            await message.send("🗨️✨ |★🅡🅔🅧🅑🅞🅣𝙲𝚊𝚝𝙶𝙿𝚃\n━━━━━━━━━━━━━━━━\nError: Unexpected response format from API.\n━━━━━━━━━━━━━━━━");
         }
     } catch (error) {
         // Log the error for debugging
